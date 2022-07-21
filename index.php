@@ -10,6 +10,19 @@
     <pre>
         Debug Output:
         <?php
+         $pin="Not found";
+
+        if(isset($_GET['md5'])){
+            $start_time=microtime(true);
+            $md5=$_GET['md5'];
+
+
+            //String to make pin combinations
+            $numbers="0123456789";
+
+            //4 loops to create all possible PIN's
+            
+        }
 
         ?>
     </pre>
