@@ -20,8 +20,30 @@
             //String to make pin combinations
             $numbers="0123456789";
 
-            //4 loops to create all possible PIN's
-            
+            //4 loops to create all possible 4 digit PIN's
+            for ($i=0 ; $i<=strlen($numbers) ; $i++){ //outer loop to get 1st digit of pin
+                $num1=$numbers[$i];
+
+
+                for ($j=0 ; $j<=strlen($numbers) ; $j++){ //nested loop to get 2nd digit of pin
+                    $num2=$numbers[$j];
+
+    
+                    for ($k=0 ; $k<=strlen($numbers) ; $k++){ //nested loop to get 3rd digit of pin
+                        $num3=$numbers[$k];
+
+
+                        for ($l=0 ; $l<=strlen($numbers) ; $l++){ //nested loop to get 4rd digit of pin
+                            $num4=$numbers[$l];
+
+
+                            //
+                        }
+
+                    }
+                
+                }
+            }
         }
 
         ?>
