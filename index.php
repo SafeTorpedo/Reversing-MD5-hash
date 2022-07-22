@@ -37,7 +37,16 @@
                             $num4=$numbers[$l];
 
 
-                            //
+                            //Concatenate all the 4 digits to create a possible PIN
+                            $try=$num1.$num2.$num3.$num4;
+
+
+                            //Check for match with the entered MD5 hash
+                            $check=hash('md5',$try);
+                            if ($check==$md5){
+                                $pin=$try;
+                                break;
+                            }
                         }
 
                     }
