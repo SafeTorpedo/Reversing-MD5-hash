@@ -15,10 +15,11 @@
         if(isset($_GET['md5'])){
             $start_time=microtime(true);
             $md5=$_GET['md5'];
-
+            $ctr=15;
 
             //String to make pin combinations
             $numbers="0123456789";
+
 
             //4 loops to create all possible 4 digit PIN's
             for ($i=0 ; $i<=strlen($numbers) ; $i++){ //outer loop to get 1st digit of pin
@@ -45,7 +46,14 @@
                             $check=hash('md5',$try);
                             if ($check==$md5){
                                 $pin=$try;
-                                break;
+                                break; 
+                            }
+
+
+                            //Show first 15 ouputs
+                            if ($ctr>0){
+                                print "$check\t$try";
+                                $ctr-=1;
                             }
                         }
 
@@ -53,8 +61,17 @@
                 
                 }
             }
+
+            //Computing elapsed time
+            $end_time=microtime(true);
+            echo "Elapsed time: ";
+            $time=$end_time-$start_time;
+            echo $time;
+            echo "\n";
         }
 
         ?>
     </pre>
+
+    
 </body>
