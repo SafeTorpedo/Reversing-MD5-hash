@@ -10,4 +10,15 @@ if (isset($_GET['encoding'])){
 }
 ?>
 
+<body>
+<h1>MD5 hash encoder</h1>
+<p>MD5 hash for the entered PIN <?= htmlentities($md5); ?></p>
 
+<form>
+    <input type="text" name="encoding" size="60" />
+    <input type="submit" value="Generate MD5" />
+</form>
+
+<!-- List of links -->
+
+</body>

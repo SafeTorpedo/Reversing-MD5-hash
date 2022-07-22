@@ -75,7 +75,7 @@
 
     <p>Cracked PIN: <?= htmlentities($pin);?></p>
     <form>
-        <input type="text" name="md5" size=80 />
+        <input type="text" name="md5" size="80" />
         <input type="submit" value="Crack!" />
     </form>
 
