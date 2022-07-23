@@ -21,4 +21,10 @@ if (isset($_GET['encoding'])){
 
 <!-- List of links -->
 
+<ol>
+    <li><a href="md5.php">Reset this Page</a></li>
+    <li><a href="index.php" target="_blank">Back to MD5 Pin cracker</a></li>
+</ol>
+
 </body>
+</html>

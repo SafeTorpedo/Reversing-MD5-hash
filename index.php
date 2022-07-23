@@ -80,7 +80,10 @@
     </form>
 
     <!-- List of links -->
-    
-
+    <ol>
+        <li><a href="index.php">Reset this Page</a></li>
+        <li><a href="md5.php" target="_blank">MD5 Encoder</a></li>
+    </ol>
 
 </body>
+</html>
