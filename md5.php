@@ -12,7 +12,7 @@ if (isset($_GET['encoding'])){
 
 <body>
 <h1>MD5 hash encoder</h1>
-<p>MD5 hash for the entered PIN <?= htmlentities($md5); ?></p>
+<p>MD5 hash for the entered PIN: <?= htmlentities($md5); ?></p>
 
 <form>
     <input type="text" name="encoding" size="60" />
@@ -21,10 +21,10 @@ if (isset($_GET['encoding'])){
 
 <!-- List of links -->
 
-<ol>
+<ul>
     <li><a href="md5.php">Reset this Page</a></li>
     <li><a href="index.php" target="_blank">Back to MD5 Pin cracker</a></li>
-</ol>
+</ul>
 
 </body>
 </html>
