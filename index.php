@@ -8,7 +8,7 @@
         and checks all 10,000 possible 4 digit PIN's to determine the pin!
     </p>
     <pre>
-        Debug Output:
+    Debug Output:
         <?php
          $pin="Not found";
 
